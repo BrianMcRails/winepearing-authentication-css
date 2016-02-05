@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  resources :addresses
   devise_for :users
+  resources :charges, :customers
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   get 'home' => 'welcome#index', as: 'home'
+  get 'about' => 'welcome#about', as: 'about'
+  get 'contact' => 'welcome#contact', as: 'contact'
+  #get 'address' => 'customer#address', as: 'address'
+
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 

@@ -1,0 +1,41 @@
+<div class="jumbotron">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @address.full_name %>
+</p>
+
+<p>
+  <strong>Address line 1:</strong>
+  <%= @address.address_line_1 %>
+</p>
+
+<p>
+  <strong>Address line 2:</strong>
+  <%= @address.address_line_2 %>
+</p>
+
+<p>
+  <strong>Address city:</strong>
+  <%= @address.address_city %>
+</p>
+
+<p>
+  <strong>Address state:</strong>
+  <%= @address.address_state %>
+</p>
+
+<p>
+  <strong>Address zip:</strong>
+  <%= @address.address_zip %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @address.user %>
+</p>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>
+</div>

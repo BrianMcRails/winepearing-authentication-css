@@ -29,6 +29,8 @@ gem 'devise'
 	#CSS styling
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sprockets-rails'
+	#subscription
+gem 'stripe'
 #gem 'sprockets-rails', '~> 2.1.4'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
